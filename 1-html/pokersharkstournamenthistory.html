@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<title>Pokersharks Tournament History</title>
+
+<head>
+    <style type="text/css">
+    * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            padding: 0;
+            font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            background-color: #F3F3F3;
+        }
+        
+        #menu-bar {
+            height: 80px;
+            width: 100%;
+            background-color: white;
+            border-bottom: 1px solid grey;
+        }
+        
+        #psc-logo {
+            height: 70px;
+            padding: 5px 40px 5px 40px;
+            float: left;
+        }
+        
+        #menu-section {
+            height: 20px;
+            margin: 0 auto;
+            float: left;
+            padding: 25px 25px 25px 25px;
+            font-size: 18px;
+        }
+        
+        #menu-section a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #menu-section a:hover {
+            color: #E93F33;
+        }
+        
+        #chip-stack {
+            width: 85%;
+            z-index: 1;
+            margin: 40px;
+            border-style: groove;
+            background-color: white;
+        }
+        
+        #main-page-sponsors-container {
+            background-color: white;
+            width: 800px;
+            height: 700px;
+            margin: 20px;
+            margin-left: 40px;
+            padding: 15px;
+            border-style: groove;
+            background-image: 0;
+            background-position: center center;
+            background-size: 95%;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+        
+        #sponsor-box {
+            width: 210px;
+            height: 250px;
+            float: left;
+            margin: 70px 20px 10px 20px;
+            border-radius: 10px;
+            border: 3px solid grey;
+            background-color: white;
+            float: left;
+        }
+        
+        #sponsor-box a {
+            color: black;
+            text-decoration: none;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+        }
+        
+        #sponsor-box a:hover {
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .sponsor-image {
+            width: 210px;
+            height: 150px;
+            float: top;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #fake-ad-container {
+            height: 720px;
+            background-color: white;
+            border-style: groove;
+            width: 300px;
+            margin-left: 980px;
+            margin-top: -755px;
+        }
+        
+        .mini-header {
+            font-size: 36px;
+            padding: 5px;
+        }
+        
+        #tournament-results-container {
+            width: 1200px;
+            height: 1500px;
+            margin-top: 30px;
+            margin-left: 40px;
+            background-color: white;
+            color: black;
+        }
+        
+        #h {
+            font-family: 'Lato';
+            margin-left: 300px;
+        }
+        
+        #tournament-results {
+            font-family: "Lato", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #tournament-results td,
+        #tournament-results th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        #tournament-results tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #tournament-results tr:hover {
+            background-color: #ddd;
+        }
+        
+        #tournament-results th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="menu-bar">
+        <img id="psc-logo" src="psc-logo.png">
+        <div id="menu-section">
+            <a href="">PLAYERS</a>
+        </div>
+        <div id="menu-section">
+            <a href="">RESULTS</a>
+        </div>
+        <div id="menu-section">
+            <a href="">LEADERBOARD</a>
+        </div>
+        <div id="menu-section">
+            <a href="">PLAY WITH US</a>
+        </div>
+        <div id="menu-section">
+            <a href="">POKER SCHOOL</a>
+        </div>
+    </div>
+    <img id="chip-stack" src="pokerbanner5-withbanners.png"></img>
+    <div id="main-page-sponsors-container">
+        <div id="sponsor-box">
+            <img class="sponsor-image" src="homegames.jpg">
+            <a href="https://www.pokerstars.bet/?no_redirect=1">Set up a home game and invite your friends to join at Pokerstars</a>
+        </div>
+        <div id="sponsor-box">
+            <img class="sponsor-image" src="zoom.jpg">
+            <a href="https://zoom.us/">Keep the play live with a free meeting via Zoom</a>
+        </div>
+        <div id="sponsor-box">
+            <img class="sponsor-image" src="paypal.png">
+            <a href="https://www.paypal.com/us/webapps/mpp/account-selection">Pay up in a single click with payment apps like Paypal</a>
+        </div>
+        <div id="sponsor-box">
+            <img class="sponsor-image" src="venmo.png">
+            <a href="https://www.pokerstars.bet/?no_redirect=1">Or you can use your Venmo account, instead</a>
+        </div>
+        <div id="sponsor-box">
+            <img class="sponsor-image" src="googledrive.webp ">
+            <a href="https://www.pokerstars.bet/?no_redirect=1">Track pot-size and see who's playing through our shared google sheet</a>
+        </div>
+        <div id="sponsor-box">
+            <img class="sponsor-image" src="saucey.jpg ">
+            <a href="https://www.pokerstars.bet/?no_redirect=1">And don't forget to order a drink for the winner.  Cheers! </a>
+        </div>
+    </div>
+    <div id="fake-ad-container">
+
+
+    </div>
+    <div id="tournament-results-container">
+        <div class=mini-header>
+            Tournament Results
+        </div>
+        <table id="tournament-results">
+            <thead>
+                <th>Date</th>
+                <th>Tournament Title</th>
+                <th>1st Place</th>
+                <th>2nd Place</th>
+                <th>3rd Place</th>
+                <th>Total Chips=Payout</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunday April 5th</td>
+                    <td>Extravaganza</td>
+                    <td>RhythMC42</td>
+                    <td>rking999</td>
+                    <td></td>
+                    <td>$160=$112/$48</td>
+                </tr>
+                <tr>
+                    <td>Friday April 10th</td>
+                    <td>The Sharks are Boxed</td>
+                    <td>Ripofine</td>
+                    <td>WyomingOH</td>
+                    <td></td>
+                    <td>$390=$195/$195 Chop</td>
+                </tr>
+                <tr>
+                    <td>Saturday April 11th</td>
+                    <td>Go Get a Fish</td>
+                    <td>2nCalories</td>
+                    <td>RhythMC42</td>
+                    <td></td>
+                    <td>$210=$147/$63</td>
+                </tr>
+                <tr>
+                    <td>Sunday April 12th</td>
+                    <td>Sunday Fish Market</td>
+                    <td>lol_Levy</td>
+                    <td>RhythMC42</td>
+                    <td></td>
+                    <td>$220=$154/$66</td>
+                </tr>
+                <tr>
+                    <td>Friday April 17th</td>
+                    <td>An Aquarium is Not a Cage</td>
+                    <td>PrincessPA</td>
+                    <td>rking999</td>
+                    <td></td>
+                    <td>$280=$150/$130 Chop</td>
+                </tr>
+                <tr>
+                    <td>Saturday April 18th</td>
+                    <td>Fishes Never Learn to Swim</td>
+                    <td>lol_Levy</td>
+                    <td>RhythMC42</td>
+                    <td></td>
+                    <td>$210=$147/$63</td>
+                </tr>
+                <tr>
+                    <td>Saturday April 18th (2)</td>
+                    <td>Cash Game</td>
+                    <td>RhythMC42</td>
+                    <td></td>
+                    <td></td>
+                    <td>$60=$60</td>
+                </tr>
+                <tr>
+                    <td>Sunday April 19th</td>
+                    <td>Sharks Don't Prey on Sunday</td>
+                    <td>lol_Levy</td>
+                    <td></td>
+                    <td></td>
+                    <td>$110=$110</td>
+                </tr>
+                <tr>
+                    <td>Friday April 24th</td>
+                    <td>You Can't Cage a White Shark</td>
+                    <td>rking999</td>
+                    <td>PrincessPA</td>
+                    <td></td>
+                    <td>$420=$220/$200 Chop</td>
+                </tr>
+                <tr>
+                    <td>Saturday April 25th</td>
+                    <td>Saturday Night Fever</td>
+                    <td>antlevy</td>
+                    <td>2nCalories</td>
+                    <td></td>
+                    <td>$220=$154/$66</td>
+                </tr>
+                <tr>
+                    <td>Sunday April 26th</td>
+                    <td>Fishes Go to Church They Prey</td>
+                    <td>mr.inyou</td>
+                    <td></td>
+                    <td></td>
+                    <td>$200=$200</td>
+                </tr>
+                <tr>
+                    <td>Friday May 1st</td>
+                    <td>A Shark is a Fish</td>
+                    <td>PrincessPA</td>
+                    <td>mr.inyou</td>
+                    <td></td>
+                    <td>$420=$294/$126</td>
+                </tr>
+                <tr>
+                    <td>Saturday May 2nd</td>
+                    <td>The Saturday Fishing Trip</td>
+                    <td>elcheapo23</td>
+                    <td>JDGSunshine</td>
+                    <td></td>
+                    <td>$290=$203/$87</td>
+                </tr>
+                <tr>
+                    <td>Sunday May 3rd</td>
+                    <td>What Happened to Sunday</td>
+                    <td>elcheapo23</td>
+                    <td>mr.inyou</td>
+                    <td></td>
+                    <td>$200=$140/$60</td>
+                </tr>
+                <tr>
+                    <td>Friday May 8th</td>
+                    <td>Sharks Have to Move Always</td>
+                    <td>marinpoker123</td>
+                    <td>mr.inyou</td>
+                    <td>stealthRTT</td>
+                    <td>$480=$216/$216/$48 Chop</td>
+                </tr>
+                <tr>
+                    <td>Saturday May 9th</td>
+                    <td>Saturday Fishing Trip</td>
+                    <td>PrincessPA</td>
+                    <td>MJH1978</td>
+                    <td></td>
+                    <td>$280=$196/$84</td>
+                </tr>
+                <tr>
+                    <td>Sunday May 10th</td>
+                    <td>Sunday Night</td>
+                    <td>elcheapo23</td>
+                    <td>lol_levy</td>
+                    <td>JDGSunshine</td>
+                    <td>$350=$170/$90/$90 Chop</td>
+                </tr>
+                <tr>
+                    <td>Friday May 15th</td>
+                    <td>An Aquarium is Not a Jail</td>
+                    <td>isaacjdye</td>
+                    <td>WhyomingOH</td>
+                    <td>rking999</td>
+                    <td>$440=$146.33/$146.33/$146.33 Chop</td>
+                </tr>
+                <tr>
+                    <td>Saturday May 16th</td>
+                    <td>Who the King Now</td>
+                    <td>elcheapo23</td>
+                    <td>PrincessPA</td>
+                    <td>lol_Levy</td>
+                    <td>$350=$157.50/$157.50/$35 Chop</td>
+                </tr>
+                <tr>
+                    <td>Sunday May 17th</td>
+                    <td>Fishes be Eaten, Amen</td>
+                    <td>lol_levy</td>
+                    <td>marinpoker123</td>
+                    <td></td>
+                    <td>$290=$203/$87</td>
+                </tr>
+                <tr>
+                    <td>Friday May 22nd</td>
+                    <td>Friday Fish Market</td>
+                    <td>elcheapo23</td>
+                    <td>marinpoker123</td>
+                    <td></td>
+                    <td>$330=$165/$165 Chop</td>
+                </tr>
+                <tr>
+                    <td>Saturday May 23nd</td>
+                    <td>Saturday Fish Market</td>
+                    <td>2nCalories</td>
+                    <td>marinpoker123</td>
+                    <td>stealthRTT</td>
+                    <td>$360=$216/$108/$36</td>
+                </tr>
+                <tr>
+                    <td>Sunday May 24th</td>
+                    <td>Sunday Fish Market</td>
+                    <td>marinpoker123</td>
+                    <td>rking999</td>
+                    <td>RhythMC42</td>
+                    <td>$300=$165/$165/$30 Chop</td>
+                </tr>
+                <tr>
+                    <td>Friday May 29th</td>
+                    <td>Fish Don't Need Masks</td>
+                    <td>CastroValleyKid</td>
+                    <td>elcheapo23</td>
+                    <td>marinpoker123</td>
+                    <td>$390=$234/$117/$39</td>
+                </tr>
+                <tr>
+                    <td>Saturday May 30th</td>
+                    <td>Fishes Don't Go To Space</td>
+                    <td>Marinpoker123</td>
+                    <td>JDGSunshine</td>
+                    <td>isaacjdye</td>
+                    <td>$450=$270/$135/$45</td>
+                </tr>
+                <tr>
+                    <td>Sunday May 31st</td>
+                    <td>Go Fish</td>
+                    <td>rking999</td>
+                    <td>JDGSunshine</td>
+                    <td>LuckLuc</td>
+                    <td>$440=$240/$156/$44 Chop</td>
+                </tr>
+                <tr>
+                    <td>Friday June 5th</td>
+                    <td>N/A</td>
+                    <td>lo_levy</td>
+                    <td>elcheapo23</td>
+                    <td></td>
+                    <td>$350=$204/$136</td>
+                </tr>
+                <tr>
+                    <td>Saturday June 6th</td>
+                    <td>Fishes Don't Feel the Wind</td>
+                    <td>Evaninsky</td>
+                    <td>Luchiano510</td>
+                    <td></td>
+                    <td>$340=$204/$136</td>
+                </tr>
+                <tr>
+                    <td>Sunday June 7th</td>
+                    <td>Sunday Shark Party</td>
+                    <td>PrincessPA</td>
+                    <td>lol_levy</td>
+                    <td></td>
+                    <td>$370=$222/$148</td>
+                </tr>
+                <tr>
+                    <td>Friday June 12th</td>
+                    <td>Fishes Don't Eat Spam</td>
+                    <td>CastroValleyKid</td>
+                    <td>MontanaMike722</td>
+                    <td></td>
+                    <td>$330=$198/$132</td>
+                </tr>
+                <tr>
+                    <td>Saturday June 13th</td>
+                    <td>No Day Off For Sharks</td>
+                    <td>PrincessPA</td>
+                    <td>RhythMC42</td>
+                    <td></td>
+                    <td>$400=$200/$200 Chop</td>
+                </tr>
+                <tr>
+                    <td>Sunday June 13th</td>
+                    <td>Where Fish Swim, Sharks Feast</td>
+                    <td>LuckLuc 1313</td>
+                    <td>PrincessPA</td>
+                    <td></td>
+                    <td>$370=$222/$148</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+    <div id="leaderboard-container">
+        <img src=takingchips2.jpg width="150">
+        <h1 style="text-align:left;"><em>Leaderboard</em></h1>
+        <ol style="text-align:left;">
+            <li>PrincessPA</li>
+            <li>lol_levy</li>
+            <li>elcheapo23</li>
+            <li>marinpoker123</li>
+            <li>rking999</li>
+            <li>mr.inyou</li>
+            <li>RhythMC42</li>
+            <li>JDGSunshine</li>
+            <li>CastroValleyKid</li>
+            <li>2nCalories</li>
+            <li>LuckLuc</li>
+            <li>Evaninsky</li>
+            <li>Ripofine & WyomingOH</li>
+            <li>isaacjdye</li>
+            <li>antlevy</li>
+            <li>Luchiano510</li>
+            <li>MontanaMike710</li>
+            <li>MJH1978 & stealthRTT</li>
+        </ol>
+        <p><em>updated 6/15/20</em></p>
+        <p>
+            <img src=takingchips1.jpg width="150">
+        </p>
+        <hr>
+    </div>
+    <div id="poker-school-container">
+        <h1 style="text-align:center;">Improve Your Game the <sup>MIT</sup> Way</h1>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OTkq4OsG_Yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tXVDY1HvrVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LCoPLFaeq0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tssNDp5I6zA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JQSTRkGEiWw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IZZ4y5GfdOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MnbQjpejZt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kn92WXcKr0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><input type="radio" name=howhelpful>Very Helpful</p>
+        <p><input type="radio" name=howhelpful>Somewhat Helpful</p>
+        <p><input type="radio" name=howhelpful>Not Helpful</p>
+        <hr>
+        <a href="https://www.udemy.com/course/the-complete-web-developer-course-2/learn/lecture/4671402#overview">Click Here to Return to the Complete Web Developer Course 2.0's Putting it All Together Video</a>
+        <hr>
+        <h1><em>That's it folks. See you at the table!</em></h1>
+        <img src="pokerbanner4.jpg" width="100%">
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
