@@ -18,6 +18,7 @@
         #menu-banner {
             height: 80px;
             width: 100%;
+            display: flex;
             background-color: white;
             border-bottom: 1px solid grey;
             position: sticky;
@@ -26,20 +27,43 @@
             z-index: 1;
         }
         
-        #psc-logo {
+        .psc-logo-wrapper {
+            width: 137px;
             margin-left: 60px;
+        }
+        #psc-logo {
+            width: auto;
+            height: 100%;
         }
         
         #menu-section {
             height: 40px;
-            width: 800px;
+            display: flex;
+            padding-top: 20px;
             font-size: 20px;
             border: 1px transparent solid;
-            position: absolute;
             right: 60px;
             bottom: 0;
+            justify-content: flex-end;
+            width: 100%;
+            padding-right: 60px;
         }
-        
+
+        @media only screen and (max-width: 990px) {
+            #menu-section {
+                font-size: 14px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            #menu-section {
+                font-size: 12px;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            #menu-section {
+                font-size: 12px;
+            }
+        }
         #menu-section a {
             text-decoration: none;
             color: black;
@@ -80,10 +104,17 @@
             overflow: auto;
             overflow: scroll;
         }
+
+        .sponsor-flex-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        } 
         
-        #sponsor-box {
+        .sponsor-box {
             width: 120px;
-            height: 170px;
+            height: fit-content;
+            min-height: 190px;
             margin: 6px;
             padding: 5px;
             border-radius: 10px;
@@ -91,22 +122,31 @@
             background-color: white;
             float: left;
         }
+
+        .sponsor-box-wrapper {
+            width: 20%;
+         }
         
-        #sponsor-box a {
+        .sponsor-box a {
             color: black;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 11px;
         }
         
-        #sponsor-box a:hover {
+        .sponsor-box a:hover {
             text-decoration: none;
             font-weight: bold;
             color: #061F3E;
         }
         
+        .sponsor-image-wrapper {
+            width: 100%;
+            min-height: 128px;
+        }
+
         .sponsor-image {
             width: 100%;
-            height: 75px;
+            height: auto;
             border-radius: 10px;
             margin-bottom: 10px;
         }
@@ -119,6 +159,15 @@
             float: right;
         }
         
+        .ad-phil {
+
+
+        }
+
+        .ad-casino {
+
+
+        }
         #fake-ad-image {
             width: 100%;
             margin-top: 1px;
@@ -262,7 +311,9 @@
 
 <body>
     <div id="menu-banner">
-        <img id="psc-logo" src="psc-logo.png" height=80px;>
+        <div class="psc-logo-wrapper">
+            <img id="psc-logo" src="psc-logo.png" height=80px;>
+        </div>
         <div id="menu-section">
             <a href=#main-page-sponsors>SPONSORS</a>
             <a href=#tournament-results>RESULTS</a>
@@ -274,34 +325,50 @@
     <div id="chips-container">
         <img src="pokerbanner5-withbanners.png" width=100% height=100%>
     </div>
-    <div id="sponsors-ad-container">
+    <section id="sponsors-ad-container">
         <div id="main-page-sponsors">
-            <div id="sponsor-box">
-                <img class="sponsor-image" src="homegames.jpg">
-                <a href="https://www.pokerstars.bet/?no_redirect=1">Set up a home game and invite your friends!</a>
-            </div>
-            <div id="sponsor-box">
-                <img class="sponsor-image" src="zoom.jpg">
-                <a href="https://zoom.us/">Keep the action live with free Zoom meetings</a>
-            </div>
-            <div id="sponsor-box">
-                <img class="sponsor-image" src="paypal.png">
-                <a href="https://www.paypal.com/us/webapps/mpp/account-selection">Settle up in no time with your Paypal account</a>
-            </div>
-            <div id="sponsor-box">
-                <img class="sponsor-image" src="googledrive.webp ">
-                <a href="https://www.pokerstars.bet/?no_redirect=1">Track pot-size and see who's at your table here</a>
-            </div>
-            <div id="sponsor-box">
-                <img class="sponsor-image" src="saucey.jpg ">
-                <a href="https://www.pokerstars.bet/?no_redirect=1">First player out buys a round for the table</a>
+            <div class="sponsor-flex-box">
+                <div class="sponsor-box">
+                    <div class="sponsor-image-wrapper">
+                    <img class="sponsor-image" src="homegames.jpg">
+                    </div>
+                    <a href="https://www.pokerstars.bet/?no_redirect=1">Set up a home game and invite your friends!</a>
+                </div>
+                <div class="sponsor-box">
+                        <div class="sponsor-image-wrapper">
+                    <img class="sponsor-image" src="zoom.jpg">
+                        </div>
+                    <a href="https://zoom.us/">Keep the action live with free Zoom meetings</a>
+                </div>
+                <div class="sponsor-box">
+                        <div class="sponsor-image-wrapper">
+                    <img class="sponsor-image" src="paypal.png">
+                        </div>
+                    <a href="https://www.paypal.com/us/webapps/mpp/account-selection">Settle up in no time with your Paypal account</a>
+                </div>
+                <div class="sponsor-box">
+                        <div class="sponsor-image-wrapper">
+                    <img class="sponsor-image" src="googledrive.webp ">
+                        </div>
+                    <a href="https://www.pokerstars.bet/?no_redirect=1">Track pot-size and see who's at your table here</a>
+                </div>
+                <div class="sponsor-box">
+                        <div class="sponsor-image-wrapper">
+                    <img class="sponsor-image" src="saucey.jpg ">
+                        </div>
+                    <a href="https://www.pokerstars.bet/?no_redirect=1">First player out buys a round for the table</a>
+                </div>
             </div>
         </div>
         <div id="fake-ad-sidebar">
+            <div class="ad-phil">
             <img id="fake-ad-image" src="phil-ivey-ad.jpg">
+            </div>
+            <div class="ad-casino">
             <img id="fake-ad-image" src="casino-games-ad.jpg" height=520px>
+            </div>     
         </div>
-    </div>
+    </section>
     <h1>&#9824 TOURNAMENT RESULTS &#9824</h1>
     <div id="table-wrapper">
         <div id="table-scroll">
