@@ -29,12 +29,12 @@
         
         .psc-logo-wrapper {
             height: fit-content;
-            max-height: 80px;
             width: 15%;
-            margin-left: 60px;
-            border: 1px solid black;
+            min-height: 79px;
+            max-height: 79px;
+            border: 1px transparent solid;
             display: flex;
-            justify-content: space-around;
+            margin-left: 60px;
         }
         
         #psc-logo {
@@ -298,13 +298,7 @@
         }
         /** RESPONSIVE DESIGN **/
         
-        @media only screen and (max-width: 929px) {
-            #menu-section {
-                font-size: 12px;
-            }
-        }
-        
-        @media only screen and (max-width: 990px) {
+        @media only screen and (max-width: 1001px) {
             #menu-section {
                 font-size: 14px;
             }
