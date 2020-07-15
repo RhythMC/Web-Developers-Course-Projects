@@ -28,31 +28,27 @@
         }
         
         .psc-logo-wrapper {
-            height: fit-content;
-            width: 15%;
-            min-height: 79px;
-            max-height: 79px;
+            height: 150px;
             border: 1px transparent solid;
+            justify-content: center;
             display: flex;
-            margin-left: 60px;
         }
         
         #psc-logo {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
         }
         
         #menu-section {
             height: 40px;
             display: flex;
             padding-top: 20px;
-            font-size: 20px;
+            font-size: 25px;
             border: 1px transparent solid;
             right: 60px;
             bottom: 0;
-            justify-content: flex-end;
+            justify-content: space-evenly;
             width: 100%;
-            padding-right: 60px;
         }
         
         #menu-section a {
@@ -300,13 +296,19 @@
         
         @media only screen and (max-width: 1001px) {
             #menu-section {
+                font-size: 18px;
+            }
+        }
+        
+        @media only screen and (max-width: 800px) {
+            #menu-section {
                 font-size: 14px;
             }
         }
         
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 700px) {
             #menu-section {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
     </style>
@@ -314,10 +316,10 @@
 
 <body>
     <!-- THIS IS THE HEADER -->
+    <div class="psc-logo-wrapper">
+        <img id="psc-logo" src="psc-logo.png">
+    </div>
     <div id="menu-banner">
-        <div class="psc-logo-wrapper">
-            <img id="psc-logo" src="psc-logo.png">
-        </div>
         <div id="menu-section">
             <a href=#main-page-sponsors>SPONSORS</a>
             <a href=#tournament-results>RESULTS</a>
@@ -325,6 +327,7 @@
             <a href="https://docs.google.com/document/d/1HTNiBCnxu-v80P5YCdKY217uRG9wBMVIy345eI-o5Cc/edit?usp=sharing" target="_blank">PLAY WITH US</a>
             <a href=#poker-school-container>POKER SCHOOL</a>
         </div>
+
     </div>
     <div id="chips-container">
         <img src="pokerbanner5-withbanners.png" width=100% height=100%>
